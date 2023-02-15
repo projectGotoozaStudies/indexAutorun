@@ -11,9 +11,9 @@ namespace indexAutorun
     {
         static void Main(string[] args)
         {
-            //直下にある index.pdf を読み込む
+            //直下にある doc\index.pdf を読み込む
             Process ps = new Process();
-            ps.StartInfo.FileName = @"index.pdf";
+            ps.StartInfo.FileName = @"doc\index.pdf";
             ps.Start();
         }
     }
