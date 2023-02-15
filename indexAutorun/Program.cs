@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Diagnostics;
 
 namespace indexAutorun
 {
@@ -10,8 +11,10 @@ namespace indexAutorun
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            Console.ReadKey();
+            //直下にある index.pdf を読み込む
+            Process ps = new Process();
+            ps.StartInfo.FileName = @"index.pdf";
+            ps.Start();
         }
     }
 }
