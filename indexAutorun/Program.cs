@@ -1,9 +1,12 @@
 ﻿using System;
+using System.Reflection;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Diagnostics;
+using System.IO;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace indexAutorun
 {
@@ -13,8 +16,9 @@ namespace indexAutorun
         {
             //直下にある doc\index.pdf を読み込む
             Process ps = new Process();
-            ps.StartInfo.FileName = @"doc\index.pdf";
+            ps.StartInfo.FileName = @"index.pdf";
             ps.Start();
         }
     }
 }
+
